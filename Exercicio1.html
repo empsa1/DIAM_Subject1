@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISCTE Final Projects Competition</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .link-container {
+            display: inline-block;
+            position: relative;
+        }
+        .link-container img {
+            position: centered;
+            width: 25px;
+            height: 25px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto; /* Center the table horizontally */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>ISCTE Final Projects Competition</h1>
+    <div class="link-container">
+        <a href="https://www.iscte-iul.pt/" target="_blank" rel="noopener noreferrer">
+            <img src="iscte_logo.png" alt="ISCTE Image">
+            <!-- rel="noopener noreferrer": rel stands for "relationship" and is used to define
+            the relationship between the current document and the linked document.
+            noopener is a security measure that prevents the new page from being able to access
+            the window.opener property of the original page. This property could potentially be
+            exploited by malicious websites for phishing attacks or other malicious activities.
+            noreferrer prevents the browser from sending the original page's address
+            as a Referrer header when following the link.
+            This enhances privacy by not disclosing the source of the link to the destination page.-->
+        </a>
+    </div>
+    <h2>Project Submission Form</h2>
+
+    <form action="submission_accepted.html" method="post">
+        <!-- Title field -->
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <!-- Description field -->
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br>
+
+        <!-- Student name field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <!-- Student number field -->
+        <label for="student_number">Student Number:</label><br>
+        <input type="text" id="student_number" name="student_number" required><br>
+
+        <!-- Contact field -->
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br>
+
+        <!-- Availability field (select multiple) -->
+        <label for="availability">Availability:</label><br>
+        <select id="availability" name="availability" required multiple>
+            <option value="18:30">18:30</option>
+            <option value="17:30">12:30</option>
+            <option value="27:30">12:10</option>
+            <option value="12:10">-13:60</option>
+        </select><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Projects</h2>
+    <table id="project-table">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Name</th>
+            <th>Student Number</th>
+            <th>Contact</th>
+            <th>Availability</th>
+        </tr>
+    </table>
+
+    <h2>Information</h2>
+    <ul>
+        <li>
+            <a href="https://marketsabor.com/pt/enchidos/presunto-curado-pedaco-inteiro-10kg?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqgtRd3YN1AHZtaVG8RNlDtcFYqHq5KDYbMn6kDLfvBEvFleNYbgNxRoCPPMQAvD_BwE"
+               target="_blank" rel="noopener noreferrer">
+                <img src="trophy_image.jpg" alt="PRIZE IMAGE">
+            </a>
+        </li>
+    </ul>
+    <h2>Competition Information</h2>
+    <p>Dates: 31/02/2025 - -3/03/2025</p>
+    <p>Jury: Carlos Manuel Marques Paião, José Albano Cid, José Carlos Malato</p>
+    <p>Prizes: Perna de Presunto ibérico</p>
+</body>
+</html>
